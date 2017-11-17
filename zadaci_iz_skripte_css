@@ -1,0 +1,51 @@
+ZADATAK 1
+Napravite stilski obrazac prema slijedećim uputama.
+◦ Odredite boju pozadine internet stranice (#f3f3f3),
+◦ veličina fonta za cijeli dokument (12px),
+◦ format fonta (Helvetica, sans-serif),
+◦ boja fonta (#000000),
+◦ udaljenost teksta od ruba stranice (3px 5px),
+◦ poravnanje teksta (s lijevom i desnom stranom).
+
+.zadatak_1     {
+background-color: #f3f3f3;
+font-size: 10pt;
+font-family: Helvetica, sans-serif;
+color: #000000;
+margin: 3px 5px;
+text-align: justify;
+    }
+
+----------------------------------------------------
+
+ZADATAK 2
+Napravite responzivnu HTML stranicu gdje ćete za:
+◦ rezoluciju veću od 800px imati:
+◦ boju pozadine internet stranice (#51b4ba),
+◦ veličina fonta za odlomak (120%),
+◦ format fonta (Helvetica, sans-serif)
+◦ rezoluciju manju od 800px imati:
+◦ boju pozadine internet stranice (#51b4ba),
+◦ veličina fonta za odlomak (140%),
+◦ format fonta (Georgia, serif)
+
+@media only screen and (max-width: 800px) {
+body {
+background-color: #51b4ba;
+font-size: 120%;
+font-family: Helvetica, sans-serif;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+body {
+background-color: #51b4ba;
+font-size: 140%;
+font-family: Georgia, serif;
+    }
+}
+
+----------------------------------------------------
+ZADATAK 1.
+
+

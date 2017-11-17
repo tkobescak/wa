@@ -1,0 +1,337 @@
+Pitanja i odgovori sa 1. kolokvija:
+
+1. Ako u HTML dokumentu imamo element <div id="element">, onda će njegov CSS selektor izgledati:
+#element
+
+2. U slučaju korištenja višestrukih CSS stilova koji stil ima najveću važnost:
+umetnuti (inline)
+ili
+web preglednik
+
+3. Koja od navedenih tvrdnji je ispravan primjer poveznice na vanjski CSS dokument naziva style.css:
+<link ref="stylesheet" type="text/css" href="style.css" />
+
+4. CSS definicija p {margin:10px;text-align:justify;} :
+mijenja odlomak - odmak od svake strane, centriranje teksta po lijevoj i desnoj margini
+
+5. Ako u CSS-u želimo definirati klasu naziva crveno da oboji tekst u crveno i centrira ga to ćemo napraviti na slijede...
+.crveno {color:red;text-align:center;}
+
+6. Što je to HTML forma?
+dio dokumenta koji ima sadržaj i kontrole
+
+7. Ako u formu želimo staviti polje za unos jednolinijskig teksta (text field) imena tekst, to radimo na slijedeći naćin:
+<input type="text" name="text" />
+
+8. Koji tip input polja treba koristiti za kreiranje navedenog prinjera?
+<input type="text" />
+
+9. Ispravna definicija forme koja koristi metodu GET i poziva skriptu naziva login.php je:
+<form action="login.php" method="GET">...</form>
+Programski jezik PHP podatke iz forme može dohvaćati putem globalnih varijabli $_POST i $_GET.
+
+10. Wbe obrasci (forme):
+kreiraju se unutar elementa <form> </form>
+
+11. Kako se zove glavni transportni mehanizam u mrežnom prometu između računala koji brine o...
+transportu podataka, ali ne i o njihovom sadržaju i formatu. Transfer Control Protocol / Internet Protocol
+
+12. Koje informacije i usluge računala međusobno izmjenjuju na Internetu?
+Distribuciju i pohranu podataka
+Povezivanje stranica
+Elektronska pošta
+
+13. Što nam omogućava SSL protokol?
+šifriranje i sigurno slanje podataka
+
+14. Web 2.0 je druga faza razvoja koja je nasljedila dominantan model sa dinamičnim i fleksibilnim web servisima usmjeren na koji od... načina?
+objavljivanje / publiciranje
+
+15. Troslojnu arhitekturu čine tri osnovna sloja prezentacijski, aplikacijski i podatkovni, a srednji sloj je poslužitelj weba:
+na kojem se izvršavaju skriptni jezici ili izvršne datoteke
+
+16. Što označavaju <"-- --> znakovi u kodu?
+komentar
+
+17. Kojim HTML elementom ispisujemo naslov stranice u zaglavlju web preglednika?
+<head>
+
+18. HTML oznaka za neuređenu listu je:
+<ul>
+
+19. Kako izgleda relativna veza u XHTML kodu ako želimo pozvati dokument pod nazivom primjer.pdf koji se nalazi u direktoriju ... html dokumenta?
+<a href="primjer.pdf">link</a>
+
+20. Koji od navedenih HTML elemenata su samostalni:
+input
+br
+hr
+
+21. Kada govorimo o HTML5 verziji dokumenta onda podrazumjevamo da objedinjuju elemente prethodnih verzija. Označite elemente koji su podržani u prethodnim verzijama HTML koda?
+p = paragraf
+
+22. Koje su osnovne oznake (tag elementi) koji se uvode u html5?
+article
+aside
+section
+
+23. Koju vrstu dokumenta poznajemo kada govorimo o vertiji HTML4.01 i njenoj deklaraciji?
+DTD
+
+24. Što opisuje HTML5 element <header>?
+gornji dio stranice
+
+25. Napišite za element input vrijednost atributa type, ako želimo kontrolirati unos podataka za elektroničku poštu.
+Napomena: Koristite isključivo jednu riječ. <input type="..." name"test">
+<input type="email" name="test">
+
+27. Napišite prema HTML5 standardu kod koji generira izlaz u pregledniku kao na slici. 
+Napišite cijeli kod od deklaracije do završnog elementa.
+Dokument nije potrebno oblikovati pomoću CSS datoteke.
+
+SMJERNICE:
+Koristite isključivo generičke kontejnere (div). Pripazite kako označavate sadržaj u dokumentu.
+naslov dokumenta Kolokvij;
+meta oznake vaše ime i prezime, opis i ključe riječi;
+veza prema vanjskom CSS dokumentu;
+meta oznaka za pisanje slova sa kvačicom.
+
+Forma mora sadržavati obvezne atribute, ime forme (MyForm), slanje POST, podaci idu na url: http://www.domena.hr/signup.php
+Text polja moraju biti obvezna.
+
+Prema predlošku imate poveznice (pripazite na gornju traku sa vezama na dokument onama.htm). naslov,tekst.
+NAPOMENA: Izlaz ne mora biti identičan. Bitno je da koncept pisanja zadovoljava formu.
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Kolokvij</title>
+        <meta name="author" content="Tomislav Kobescak">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+    </head>
+    <body>
+    <div>
+        <nav>
+          <a href="index.html">O nama</a>
+          <a href="/about/">Kontakt</a>
+        </nav>
+    <div>
+    <div>
+        <h1>PRIJAVI SE ZA PROGRAMIRANJE</h1>
+    <div>
+    <div>
+        <form action= "http://www.domena.hr/signup.php.php" method="post" name="MyForm">
+            Prijava:<br>
+            Ime: <input type="text" name="fname" placeholder="Unesite ime" required><br>
+            Prezime: <input type="text" name="lname" placeholder="Unesite prezime" required><br>
+            Email: <input type="email" name="email" placeholder="Unesite e-mail adresu" required><br>
+            <input type="submit" value="Pošalji prijavu">
+        </form>
+    </div>
+    </body>
+</html>
+
+-----------------------------------------------------------
+
+ZADATAK 1
+Napravite stilski obrazac prema slijedećim uputama.
+◦ Odredite boju pozadine internet stranice (#f3f3f3),
+◦ veličina fonta za cijeli dokument (12px),
+◦ format fonta (Helvetica, sans-serif),
+◦ boja fonta (#000000),
+◦ udaljenost teksta od ruba stranice (3px 5px),
+◦ poravnanje teksta (s lijevom i desnom stranom).
+
+.zadatak_1     {
+background-color: #f3f3f3;
+font-size: 10pt;
+font-family: Helvetica, sans-serif;
+color: #000000;
+margin: 3px 5px;
+text-align: justify;
+    }
+
+-----------------------------------------------------------
+
+ZADATAK 2
+Napravite responzivnu HTML stranicu gdje ćete za:
+◦ rezoluciju veću od 800px imati:
+◦ boju pozadine internet stranice (#51b4ba),
+◦ veličina fonta za odlomak (120%),
+◦ format fonta (Helvetica, sans-serif)
+◦ rezoluciju manju od 800px imati:
+◦ boju pozadine internet stranice (#51b4ba),
+◦ veličina fonta za odlomak (140%),
+◦ format fonta (Georgia, serif)
+
+@media only screen and (max-width: 800px) {
+body {
+background-color: #51b4ba;
+font-size: 120%;
+font-family: Helvetica, sans-serif;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+body {
+background-color: #51b4ba;
+font-size: 140%;
+font-family: Georgia, serif;
+    }
+}
+
+-----------------------------------------------------------
+
+HTML5 je standard čija je namijena objediniti HTML 4
+i XHTML u jedan prezentacijski jezik koji dopušta
+sintaksu oba svoja prethodnika.
+
+HTML5 možemo podijeliti na 5 segmenata:
+• osnovna struktura stranica,
+• vizualna prezentacija,
+• grafički alati,
+• bogata podrška medija,
+• poboljšanja u JavaScriptu.
+
+HTML 5 uvodi nove elemente kako bi nam omogućio
+veću kontrolu rada:
+• stvaranje strukture stranice,
+• upravljanje medijima,
+• struktura formi
+
+HTML 5 semantički elementi:
+Oznaka - Opis
+article - Određuje neki članak
+aside - Određuje sadržaj izvan sadržaja stranice
+figure - Određuje samostalni sadržaj poput ilustracije,slika, dijagrama
+figurecaption - Određuje vezu na <figure> element
+footer - Određuje podnožje stranice ili nekog elementa
+header - Određuje zaglavlje stranice ili nekog elementa
+nav - Određuje navigacijsku listu
+section - Određuje odjeljak u dokumentu
+main - Određuje osnovni dio dokumenta
+details - Određuje dodatne detalje koje korisnik može prikazati ili sakriti
+summary - Određuje vidljivo zaglavlje za <details> element
+mark - Određuje označeni tekst
+time - Određuje vrijeme
+bdi -  Određuje dio teksta koji formatiran u drugačijem smjeru od ostalog teksta
+wbr - Određuje mogućnost prekida linije 
+dialog - Određuje dijaloški okvir
+command -  Određuje gumb za komande koji korisnik može koristiti
+meter -  Određuje skalu, mjerenje za određeni segment
+progress - Određuje tijek nekog zadatka
+ 
+HTML 5 media elementi:
+Oznaka - Opis
+audio -  Određuje audio elemente
+video - Određuje video elemente
+source - Određuje izvor za audio ili video element
+track - Određuje traku za audio ili video element
+embed - Određuje okvir za vanjsku aplikaciju (video ili audio)
+ 
+HTML 5 form elementi:
+Oznaka - Opis
+datalist - Određuje predefinirane opcije za kontrole
+keygen - Određuje polja za ključeve
+output - Određuje rezultat kalkulacije
+
+HTML 5 canvas element:
+Oznaka - Opis
+canvas - Određuje grafičke dijelove koristeći Javascript
+
+HTML 5 TEKST element:
+Oznaka - Opis
+mark - Određuje istaknuti tekst
+meter - Određuje skalarnu mjeru unutar poznatog raspona
+progress - Predstavlja napredak zadatka
+time - Određuje datum/vrijeme
+
+HTML 5 - METER element:
+<meter> element definira skalarnu veličinu (mjeru).
+Koristimo ga kada želimo označiti cijenu nekog proizvoda u
+određenoj valuti, udaljenost do nekog mjesta, veličinu diska...
+Atribut - Opis
+high - Točka gornje granice dijela metra
+low - Točka donje granice dijela metra
+max - Najviša granica u rasponu
+min - Najniža granica u rasponu
+optimum - Točka koja označava optimalnu poziciju
+value - Izmjerena vrijednost
+
+HTML 5 - PROGRESS element
+<progress> element prezentira napredak dovršavanja neke radnje ( npr. skidanje datoteke, učitavanje stranice...).
+Mjerne jedinice su proizvoljne. 
+Sam za sebe je statičan i moramo ga povezati sa Javascriptom kako bi prikazivao tijek nekog procesa i postao dinamičan.
+Atribut - Opis
+max - Ukupna vrijednost
+value - Trenutna vrijednost skidanja
+
+HTML 5 - TIME element
+<time> kodira kompjuterski oblik vremena i datuma, te ga prikazuje u obliku razumljivom čovjeku. 
+Koristi se uz sljedeće atribute:
+Atribut -  Opis
+datetime - Specificira vrijeme i datum
+pubdate - Vrijeme objave
+ 
+HTML 5 - FORME
+Oblik input polja u formi (HTML 5):
+• forma za ispravan unos URL adrese,
+• oblikovanje polja da prihvaća samo važeće email adrese,
+• odabir datuma iz kalendara,
+• isticanje polja koja su obavezna
+Oblik input polja u formi (HTML 5):
+color
+date
+datetime
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+
+FORME - email
+<input type="email">
+Ne dozvoljava upisivanje nekog drugog oblika teksta osim email adrese.
+Ne provjerava da li postoji email adresa već da li je u pravilnom formatu
+
+
+
+Prva linija koda u svakom HTML dokumentu određuje verziju HTML-a koju koristimo.
+U HTML 5 samo je jedna deklaracija koja je vrlo jednostavna: <!DOCTYPE html>
+
+(DTD) - Doctype deklaracija
+
+<article> element jasno definira sadržaj stranice.primjer njegove upotrebe je blog stranica gdje je
+
+<aside> element je opisivanje sadržaja koji je povezan s njim ali tako da nije dio glavnog sadržaja
+stranice. Pomoću njega jednostavno odvajamo sadržaj na stranici. 
+Moguća primjena je kod e-knjiga gdje je uz tekst knjige sa strane neka zabilješka.
+
+<dialog> element on nam omogućava prepoznavanje razgovora na internetu. 
+Sastoji se od tri dijela:
+• Početni tag <dialog> elementa koji označava prostor za razgovor
+• <dt> element koji identificira govornika
+• <dd> element koji identificira razgovor
+
+<figure> element nam omogućava spajanje slike i teksta koji je opisuje u jednu cjelinu. 
+Možemo kombinirati sa elementom <legend> koji definira tekst povezan sa
+slikom ili elementom <figcaption> koji definira naslov za <figure> element. 
+Može biti korišten više puta na stranici.
+
+<nav > element povezuje grupu poveznica u jednu cjelinu tako da čine navigaciju stranice (menu). 
+Iako je zamišljen kao element za navigaciju, njegova upotreba može biti i šira. 
+Možemo ga koristiti za povenice koji nas vode na neku vanjsku stranicu,
+poveznice poput „next“ ili „back“ ili poveznice koje smjestimo u podnožje dokumenta. 
+Možemo ugnjezditi liste unutar njega, bilo uređene ili neuređene.
+
+
+
+
