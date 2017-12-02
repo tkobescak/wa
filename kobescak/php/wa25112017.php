@@ -35,9 +35,9 @@ echo "<br>";
 $d=date("H"); 
 echo "<br>";
 if ($d>="8" && $d<="11") { echo "Dobro jutro"; } 
-elseif { echo "Ugodan dan!"; }
-if ($d>="11" && $d<="18"){ echo "Dobar dan"; }
-elseif { echo "Ugodan dan!"; }
+elseif ($a>=11 && $a<=18) { echo "Dobar dan"; }
+elseif($a>=18 && $a<=22){ echo "Dobro vecer!"; }
+else { echo "Vrijeme ti je za kreveta!"; }
 echo "<br>";
 ?>
 </body>
