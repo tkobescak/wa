@@ -31,6 +31,14 @@ echo "<br>";
 echo "<hr>";
 echo "c=(3*$a - $b) / 2" .$c ;
 echo "<br>";
+
+$d=date("H"); 
+echo "<br>";
+if ($d>="8" && $d<="11") { echo "Dobro jutro"; } 
+elseif { echo "Ugodan dan!"; }
+if ($d>="11" && $d<="18"){ echo "Dobar dan"; }
+elseif { echo "Ugodan dan!"; }
+echo "<br>";
 ?>
 </body>
 </html>
