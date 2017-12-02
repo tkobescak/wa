@@ -11,7 +11,10 @@
 <!-- uvoz fonta iz fonts.google.com -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <!-- vanjski css -->
-		<link rel="stylesheet" type="text/css" href="css/style.css"> 
+		<link rel="stylesheet" type="text/css" href="css/zadaca.css"> 
+<!-- unutarnji stil css -->
+	<style> 
+	h1 { Font: 12px, Verdana, #232323;}
 <body>
 <?php
 print '
@@ -31,14 +34,22 @@ echo "<br>";
 echo "<hr>";
 echo "c=(3*$a - $b) / 2" .$c ;
 echo "<br>";
-
+echo "<hr>";
 $d=date("H"); 
-echo "<br>";
 if ($d>="8" && $d<="11") { echo "Dobro jutro"; } 
 elseif ($a>=11 && $a<=18) { echo "Dobar dan"; }
 elseif($a>=18 && $a<=22){ echo "Dobro vecer!"; }
 else { echo "Vrijeme ti je za kreveta!"; }
 echo "<br>";
+echo "<hr>";
+
+$ocjene = array (4,3); 
+$prosjek = ($ocjene[0] + $ocjene[1]) /2; 
+print '<p><h1>Ocjena I. kolokvija: ' . $ocjene[0] . '</p></h1>'; 
+print '<p><h1>Ocjena II. kolokvija: ' . $ocjene[1] . '</p></h1>'; 
+print '<hr>'; 
+print 'Srednja ocjena iz predmeta: ' . $prosjek . '</p>'; 
+print 'Konačna ocjena iz predmeta: ' . round($prosjek) . '</p>'
 ?>
 </body>
 </html>
