@@ -14,19 +14,23 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css"> 
 <body>
 <?php
-<form action="/25112017.php" method="post">
-varijabla a: <input type="number" name="a"><br>
-varijabla b: <input type="number" name="b"><br>
-<input type="submit">
-</form>
-$a = $_POST['a'];
-$b = $_POST['b'];
-$c = (3*$a - $b) / 2; // zadatak u nastavku
-$tekst1 = "a = " .$a;
-$tekst2 = "b = " .$b;
-$tekst3 = "c = (3a - b)/2 = " .$c;
-echo $tekst1. "<br />" . $tekst2. "<hr >" .$tekst3; 
-
+print '
+<form action="wa25112017.php" method="POST">
+Varijabla a: <input type="number" name="a"><br>
+Varijabla b: <input type="number" name="b"><br>
+<input type="submit" value"Pošalji">
+</form> ';
+$a=$_POST['a'];
+$b=$_POST['b'];
+$c=(3*$a - $b) / 2;
+echo "<br>";
+echo "a=" .$_POST['a'] ;
+echo "<br>";
+echo "b=" .$_POST['b'] ;
+echo "<br>";
+echo "<hr>";
+echo "c=(3*$a - $b) / 2" .$c ;
+echo "<br>";
 ?>
 </body>
 </html>
