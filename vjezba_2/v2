@@ -1,0 +1,5 @@
+PHP v2
+Izračun dva broja pomoću funkcije
+Napravite zadatak koji će promjenom argumenata varijabli $x i $y promijeniti string i rezultat korištenjem forme za unos podataka. 
+Ako napišemo u formu da su vrijednosti a=1 i b=16 tada pozivamo funkciju add(1,16) ispis će biti 1 + 16 = 17,  
+a ako napišemo add(4,16) ispis će biti 4 + 16 = 20
