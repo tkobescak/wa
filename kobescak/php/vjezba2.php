@@ -28,7 +28,7 @@ p { font-family: 'Verdana', sans-serif;
     }
 </style>
 <?php
-       function addtwo($a = 0, $b = 0)
+       function add($a = 0, $b = 0)
        {
               return ($a + $b);
        }
@@ -43,6 +43,6 @@ p { font-family: 'Verdana', sans-serif;
                      <input type="text" name="vrijednost_b" value="0" /><br /><br />
                      <input type="submit" value="Izračunaj"/><br /><br />
               </form>
-              Zbroj dva broja je : <?php echo addtwo($vrijednost_a + $vrijednost_b); ?>
+              Zbroj dva broja je : <?php echo add($vrijednost_a + $vrijednost_b); ?>
        </body>
 </html>
