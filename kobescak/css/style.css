@@ -39,6 +39,8 @@ header, section, footer, aside, nav, article, hgroup {
     display:block;
 }
 
+/* dojmovnik */
+
 /* menu navigacija */
 .nav {
     background-color: #333;
@@ -58,7 +60,7 @@ header, section, footer, aside, nav, article, hgroup {
     background-color: #ddd;
     color: #4a545b;
 }
-.nav a.active {
+.nav a:active {
     background-color: #4CAF50;
     color: white;
 }
@@ -304,6 +306,39 @@ h5 { font-family: 'Roboto', sans-serif;
 	overflow:hidden;
 }
 
+.dojmovnik { font-family: 'Roboto', sans-serif;
+    text-align: center;
+	border: 5px solid #eff0f1;
+    background: #6E8A76;
+	height:auto;
+    margin: 130px auto 0 auto;
+    padding: 10px 10px;
+    width: 100%;
+	overflow:hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dojmovnik label { font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #eff0f1;
+}
+
+.dojmovnik input { font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: #4a545b;
+}
+
+.dojmovnik img {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* https://github.com/asimec1/css/blob/master/primjer_1.html */
 /* https://fonts.google.com/ */
-/*   */
